@@ -11821,6 +11821,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Analyzing-the-Data">Analyzing the Data<a class="anchor-link" href="#Analyzing-the-Data">&#182;</a></h1>
+    <p>I used the pneumonia-locations variable that had the locations of all the pneumonia locations and used it to create graphs of the most common locations for pneumonia, the widths and heights of the images, and the amount of opacities in each image.</p>
 </div>
 </div>
 </div>
@@ -11873,6 +11874,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Data-Preprocessing">Data Preprocessing<a class="anchor-link" href="#Data-Preprocessing">&#182;</a></h1>
+    <p>Here, I created multiple dataframes (data models commonly used for data analysis in python) to use when I needed to test the predictions of my model, and I parsed the data into a python dictionary which I used for training.</p>
 </div>
 </div>
 </div>
@@ -11956,6 +11958,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Creating-generator-class">Creating generator class<a class="anchor-link" href="#Creating-generator-class">&#182;</a></h1>
+    <p>When I initially tried to train my model, I found that it would require an excessively powerful server to feed all the data into my model at once for training, a resource that I di not have access to, so I decided to create a generator class which would feed data into the model while it was training, which also allowed me to randomize the order of the data so the model did not get used to any specific pattern.</p>
 </div>
 </div>
 </div>
@@ -12073,6 +12076,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Training">Training<a class="anchor-link" href="#Training">&#182;</a></h1>
+    <p>Here, I create my model architechture and train my model. I decided I would use a series of blocks of layers and chain them together to produce my final neural network. To train, I used my generator class to create two objects, one of which fed in the training data, and the other of which was used to validate the data and make predictions.</p>
 </div>
 </div>
 </div>
@@ -12177,6 +12181,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Creating-graphs-and-outputs">Creating graphs and outputs<a class="anchor-link" href="#Creating-graphs-and-outputs">&#182;</a></h1>
+    <p>Here, I used my predictions to create grapphs analyzing how my model improved over time. I also created a method to visualize the bounding boxes of an image.</p>
 </div>
 </div>
 </div>
